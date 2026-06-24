@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-light-text:#000000;
+  --color-dark-text:#ffffff;
+  --color-dark-bg:#0E100F;
+  --color-light-bg:#ffffff;
+
+}
+
+.ScrollFade{
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0) 
+  );
+}
+

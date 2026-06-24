@@ -1,0 +1,49 @@
+html, body {
+  overflow: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  scroll-behavior: smooth;
+}
+
+
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.grid-wrapper {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.grid-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-image: linear-gradient(to right, #bfc0c1 1px, transparent 1px),
+    linear-gradient(to bottom, #bfc0c1 1px, transparent 1px);
+  background-size: 20px 30px;
+  opacity: 0.4; 
+  -webkit-mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );    
+  mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );
+}
+
+.skillbg {
+  background-image: radial-gradient(rgba(183, 183, 183, 0.388) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px
+}
+
