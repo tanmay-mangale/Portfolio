@@ -10,6 +10,7 @@ import Contact from './pages/Contact'
 import Achievements from './pages/Achievements'
 import Footer from './components/Footer'
 import ContactCard from './components/ContactCard';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
 
@@ -49,6 +50,7 @@ const App = () => {
         </div>
       )}
 
+      <Analytics/>
     </div>
   )
 }
